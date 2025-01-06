@@ -1,0 +1,33 @@
+h5 {
+            text-align: center;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .rotateImg {
+            width: auto;
+            height: 450px;
+            transition: transform 0.5s ease;
+        }
+
+        .rotateImg:hover {
+            transform: rotate(180deg);
+        }
+
+.sticker {
+    width: 150px;
+    height:150px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  
+  70% {transform: rotate(400deg);}
+  100% { left:0px; top:0px;}
+}
+

@@ -1,0 +1,36 @@
+body
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: right;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+    width: 50px;
+    display: inline-block;
+}
+
+.sticker {
+    width: 150px;
+    height:150px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  30%   { right:450px; top:40px;}
+  35%  { left:450px; top:50px;}
+  70% {transform: rotate(400deg);}
+  100% { left:-450px; top:-550px;}
+}
+

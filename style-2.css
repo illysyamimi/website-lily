@@ -1,0 +1,18 @@
+body
+.sticker {
+    width: 150px;
+    height:150px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  10%   { right:500px; top:0px;}
+  25%  { left:500px; top:0px;}
+  50% {transform: rotate(380deg);}
+  100% { left:0px; top:0px;}
+}
+
+
